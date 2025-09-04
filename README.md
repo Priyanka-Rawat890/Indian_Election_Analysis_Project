@@ -50,7 +50,7 @@ The analysis was conducted to:
 ---
 
 ## 🔗 Live Project Access  
-- 🗂️ **SQL Queries:** [View on GitHub](PASTE_SQL_FILE_LINK_HERE)  
+- 🗂️ **SQL Queries:** [View on GitHub](SQLQuery1project.sql)  
 - 📄 **Database Schema (DDL):** [View Here](PASTE_SCHEMA_FILE_LINK_HERE)  
 - 🖼️ **ER Diagram:** [View Diagram](images/election_erd.png)  
 
