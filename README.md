@@ -16,8 +16,7 @@ The goal was to design queries that provide insights into **parties, alliances, 
 ---
 
 ## 📂 Project Deliverables  
-- 🗂️ **SQL Queries:** [View SQL File](https://github.com/YourGitHubUsername/Indian-General-Elections-SQL-Project/blob/main/SQLQuery1.sql)  
-- 🖼️ **ER Diagram (if available):** Add here  
+- 🗂️ **SQL Queries:** [View SQL File](https://github.com/Priyanka-Rawat890/Indian_Election_Analysis_Project/blob/main/SQLQuery1project.sql)  
 
 ---
 
