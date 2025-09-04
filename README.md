@@ -10,8 +10,7 @@ The goal was to design queries that provide insights into **parties, alliances, 
 
 ## 🛠 Tools & Technologies Used  
 - **SQL (MySQL / SQL Server)** – For querying and analysis  
-- **Excel/CSV** – Raw dataset preparation  
-- **Draw.io** – ERD diagram (optional, for schema visualization)  
+- **Excel/CSV** – Raw dataset preparation 
 
 ---
 
