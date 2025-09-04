@@ -3,77 +3,43 @@
 ---
 
 ## 🔍 Project Overview  
-This project is an **end-to-end SQL case study** analyzing the **Indian General Elections dataset**.  
-The goal was to design a database schema, perform ETL on raw datasets, and write SQL queries to extract **meaningful political and electoral insights**.  
+This project analyzes **Indian General Elections data** using SQL.  
+The goal was to design queries that provide insights into **parties, alliances, states, and candidate performance**.  
 
 ---
 
 ## 🛠 Tools & Technologies Used  
-- **SQL (MySQL / SQL Server)** – Schema design, data queries, KPI calculation  
-- **Excel / CSV** – Raw data preprocessing  
-- **Draw.io** – ERD diagram design  
+- **SQL (MySQL / SQL Server)** – For querying and analysis  
+- **Excel/CSV** – Raw dataset preparation  
+- **Draw.io** – ERD diagram (optional, for schema visualization)  
 
 ---
 
-## 📂 Business Requirements  
-The analysis was conducted to:  
-- Design a relational schema for storing election data  
-- Study results across **parties, alliances, and states**  
-- Compare **candidate performance** across constituencies  
-- Provide insights into **vote share and winning margins**  
+## 📂 Project Deliverables  
+- 🗂️ **SQL Queries:** [View SQL File](https://github.com/YourGitHubUsername/Indian-General-Elections-SQL-Project/blob/main/SQLQuery1.sql)  
+- 🖼️ **ER Diagram (if available):** Add here  
 
 ---
 
-## ✅ Key KPIs  
-- **Total Seats Won** by each party  
-- **Vote Share %** across alliances  
-- **Top Performing Parties** by state  
-- **Winning Margin Analysis** for close contests  
-- **Candidate Performance** across constituencies  
+## ✅ Key KPIs Analyzed  
+- Seats won by each party  
+- Alliance-wise performance  
+- State-wise seat distribution  
+- Winning margins by candidate  
+- Top-performing candidates  
 
 ---
 
-## 📊 Analysis Performed  
-- Seats won by **party & alliance**  
-- Performance of **regional vs national parties**  
-- State-wise **vote share and winning parties**  
-- Analysis of **candidates with highest and lowest margins**  
-- Overall election trends across states  
+## 📊 Example Analyses in SQL  
+```sql
+-- Total seats won by each party
+SELECT party, COUNT(seat_won) AS total_seats
+FROM election_results
+WHERE seat_won = 1
+GROUP BY party
+ORDER BY total_seats DESC;
 
----
-
-## 🖼️ ER Diagram  
-*(Upload your ER diagram screenshot to `images/` and show it here)*  
-
-![Election ERD](images/election_erd.png)  
-
----
-
-## 🔗 Live Project Access  
-- 🗂️ **SQL Queries:** [View on GitHub](SQLQuery1project.sql)  
-- 📄 **Database Schema (DDL):** [View Here](PASTE_SCHEMA_FILE_LINK_HERE)  
-- 🖼️ **ER Diagram:** [View Diagram](images/election_erd.png)  
-
----
-
-## 📁 Project Workflow  
-1. Collected election datasets (candidates, constituencies, parties, alliances)  
-2. Designed database schema & ER diagram  
-3. Loaded data into SQL database (ETL)  
-4. Wrote queries for seat share, vote share, margins  
-5. Derived insights and trends  
-
----
-
-## 📊 Key Insights  
-- National parties dominated in certain regions, while **regional parties held strong influence** in specific states  
-- A few constituencies had **very close winning margins**, indicating highly competitive seats  
-- **Alliances significantly impacted** the overall seat share distribution  
-- Vote share analysis highlighted **emerging parties gaining ground**  
-
----
-
-## 👩‍💼 Author  
-**Priyanka Rawat** – Aspiring Data Analyst  
-- 📌 [LinkedIn](https://linkedin.com/in/priyanka-rawat-398bb4337)  
-- 💻 [GitHub](https://github.com/Priyanka-Rawat890)  
+-- Winning margin analysis
+SELECT candidate, constituency, (votes_won - votes_runner_up) AS margin
+FROM election_results
+ORDER BY margin DESC;
